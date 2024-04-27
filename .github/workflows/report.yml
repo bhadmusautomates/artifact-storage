@@ -17,4 +17,10 @@ jobs:
           uses: cypress-io/github-action@v6
           env:
             CYPRESS_MAILSLURP_API_KEY: ${{env.CYPRESS_MAILSLURP_API_KEY}} 
-        - run: node reporter.js     
+        - run: node reporter.js    
+        
+        - name: Test Results
+          uses:  actions/upload-artifact@v3
+          with:
+            name: test-results
+            path: results/html/*.html
