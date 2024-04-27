@@ -21,11 +21,11 @@
   "cypress-cucumber-preprocessor": {
     "json": {
       "enabled": true,
-      "output": "reports/json/signup-report.json"
+      "output": "results/json/signup-report.json"
     },
     "html": {
       "enabled": true,
-      "output": "reports/html/signup-report.html"
+      "output": "results/html/signup-report.html"
     }
   }
 }
